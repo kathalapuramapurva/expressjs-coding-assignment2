@@ -1,0 +1,62 @@
+POST http://localhost:3000/register/
+Content-Type:application/json 
+
+{
+  "username": "ad",
+  "password": "richa",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type:application/json 
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+###
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+###
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+
+GET http://localhost:3000/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+GET http://localhost:3000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
+###
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+Content-Type: application/json 
+
+{
+   "tweet": "ApurvaHello"
+}
+
+###
+DELETE http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAwNzI1NjU0fQ.KXDWPdtUVgRWlJFLYX5hIwgfSWkD5pqjHi8j3ZEWBdQ
+
